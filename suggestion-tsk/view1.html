@@ -61,7 +61,7 @@ app.controller("myCtrl", function($scope,$http) {
 
 $scope.allSuggestions = ["dummy suggestion"];
 
-var listSuggestions = function(){
+$scope.listSuggestions = function(){
 
   $http.get("/listSugesstions",function(err,res1){
 
@@ -70,7 +70,7 @@ var listSuggestions = function(){
   })
 }
 
-    var saveSuggestion = function(suggestion){
+    $scope.saveSuggestion = function(suggestion){
        if(suggestion){
         $http({
         headers: {'Content-Type': 'application/x-www-form-urlencoded'},

@@ -15,4 +15,5 @@ app
 
 
   // or you can directly use pm2 and use pm2 start index1.js & pm2 start index2.js
+// or vhost for creating virtual host for differnt routes
 
